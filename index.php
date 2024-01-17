@@ -2,11 +2,10 @@
 //   include("./Database/dbh.php");
   include("header.php");
 ?>
-
-<h1 class="text-1xl font-bold underline">
-    Hello world!
-  </h1>
+<div>
+<img class="h-auto max-w-full" src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="image description">
+<div>
 
 <?php 
-// include("footer.php");
+include("footer.php");
 ?>
