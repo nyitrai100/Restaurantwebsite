@@ -21,7 +21,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 TeamName. All Rights Reserved.</span>
-        <a href="#" class="ms-2 flex text-white text-sm hover:underline me-4 md:me-6 sm:justify-center">Admin</a>
+        <a href="loginPage.php" class="ms-2 flex text-white text-sm hover:underline me-4 md:me-6 sm:justify-center">Admin</a>
     </div>
 </footer>
 
