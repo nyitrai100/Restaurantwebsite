@@ -2,12 +2,8 @@
 //   include("./Database/dbh.php");
   include("header.php");
 ?>
-<div class="p-52 bg-black">
+<div class="p-10 md:p-52 bg-black">
     <div class="font-[sans-serif] max-w-7xl mx-auto relative bg-gray-100 rounded-xl overflow-hidden">
-            <!-- <div class="absolute -top-6 -left-6 w-20 h-20 rounded-full bg-blue-400"></div>
-            <div class="absolute -bottom-6 -left-0 w-24 h-20 rounded-tr-[40px] bg-teal-200"></div>
-            <div class="absolute -top-6 -right-6 w-20 h-20 rounded-full bg-blue-400"></div>
-            <div class="absolute -bottom-6 -right-0 w-24 h-20 rounded-tl-[40px] bg-blue-300"></div> -->
             <div class="grid md:grid-cols-2">
                 <div class="text-center p-6 xl:p-10 flex flex-col items-center justify-center bg-black">
                     <h2 class="text-3xl text-white font-bold">Contact Us</h2>

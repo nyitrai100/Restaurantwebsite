@@ -12,7 +12,7 @@
                     <a href="./about.php" class="hover:underline me-4 md:me-6">About</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Menu</a>
+                    <a href="./menu.php" class="hover:underline me-4 md:me-6">Menu</a>
                 </li>
                 <li>
                     <a href="./contact.php" class="hover:underline me-4 md:me-6">Contact</a>
