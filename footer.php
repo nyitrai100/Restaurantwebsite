@@ -24,6 +24,5 @@
         <a href="loginPage.php" class="ms-2 flex text-white text-sm hover:underline me-4 md:me-6 sm:justify-center">Admin</a>
     </div>
 </footer>
-
 </body>
 </html>
