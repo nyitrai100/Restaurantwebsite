@@ -140,26 +140,81 @@
 
 
 
-<div class="flex justify-center p-10 bg-black ">
+<!-- 2 cards -->
+<div class="flex flex-col md:flex-row justify-center p-10 bg-black">
 
-
-<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 me-5">
-    <img class="object-cover w-full rounded-t-lg h-64 md:h-52 md:w-40 md:rounded md:rounded-s-lg" src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-5 md:mb-0 md:me-5">
+    <img class="object-cover w-full rounded-t-lg h-64 md:h-52 md:w-62 md:rounded md:rounded-s-lg" src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lorem ipsum dolor sit amet.</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas a accusamus sed, saepe adipisci qui.</p>
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lorem ipsum dolor sit amet.</h5>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas a accusamus sed, saepe adipisci qui.</p>
     </div>
-</a>
+  </a>
 
-<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ms-5">
-    <img class="object-cover w-full rounded-t-lg  h-64 md:h-52 md:w-40 md:rounded md:rounded-s-lg" src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ms-0 md:ms-5">
+    <img class="object-cover w-full rounded-t-lg h-64 md:h-52 md:w-62 md:rounded md:rounded-s-lg" src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lorem ipsum dolor sit amet.</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quam aliquid corrupti voluptas, deleniti iste.</p>
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lorem ipsum dolor sit amet.</h5>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quam aliquid corrupti voluptas, deleniti iste.</p>
     </div>
-</a>
+  </a>
 
 </div>
+
+<!-- food gallery -->
+
+<div class="p-10 bg-black">
+  <h1 class="text-white text-2xl flex justify-center pb-16 pt-10">Our Foods</h1>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/236887/pexels-photo-236887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/1707270/pexels-photo-1707270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/12365243/pexels-photo-12365243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+    
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/13741669/pexels-photo-13741669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/1482803/pexels-photo-1482803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/8753788/pexels-photo-8753788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/2491272/pexels-photo-2491272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/323682/pexels-photo-323682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/3997609/pexels-photo-3997609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+    </div>
+</div>
+</div>
+
+
 <?php 
 include("footer.php");
 ?>
