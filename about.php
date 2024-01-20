@@ -55,6 +55,22 @@
         </div>
       </div>
     </div>
+
+
+
+
+    <div class="font-[sans-serif] bg-black pt-20">
+      <div class="px-8 py-12 text-center bg-black text-white rounded-lg shadow-xl">
+        <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-extrabold mb-6">Reserve Your Table Today</h2>
+          <p class="text-base mb-4">Secure your spot for an unforgettable dining experience. Elevate your culinary journey and reserve a table now.</p>
+          <p class="text-base">Explore a variety of culinary delights, from our carefully curated menu to the rich flavors in every dish. Our commitment to quality ingredients and meticulous preparation ensures a dining experience that exceeds expectations. Whether it's the warmth of our inviting ambiance or the attention to detail in our service, every element is crafted to make your time with us truly memorable</p>
+         <a href="./booking.php">
+          <button type="button" class="inline-block mt-10 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-base font-medium rounded-md">Book a Table</button>
+          </a>
+        </div>
+      </div>
+    </div>
 </div>
 
 
