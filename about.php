@@ -3,7 +3,7 @@
   include("header.php");
 ?>
 
-<div class="p-10 md:p-20 bg-black">
+<div class="p-10 md:p-20 bg-black min-h-[100vh]">
 <div class="font-[sans-serif] text-white bg-black px-6 py-12">
       <div class="grid lg:grid-cols-2 gap-8 max-lg:max-w-2xl mx-auto">
         <div class="text-left">

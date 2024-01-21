@@ -2,7 +2,7 @@
 //   include("./Database/dbh.php");
   include("header.php");
 ?>
-<div class="p-10 md:p-52 bg-black text-white">
+<div class="p-10 md:p-52 bg-black text-white min-h-[100vh]">
 <div class="flex items-center justify-center p-12 bg-gray-200 rounded">
   <div class="mx-auto w-full max-w-[550px]">
   <h1 class="flex justify-center pb-20 text-black text-5xl">Booking Form</h1>

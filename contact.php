@@ -2,7 +2,7 @@
 //   include("./Database/dbh.php");
   include("header.php");
 ?>
-<div class="p-10 md:p-52 bg-black">
+<div class="p-10 md:p-52 bg-black min-h-[100vh]">
     <div class="font-[sans-serif] max-w-7xl mx-auto relative bg-gray-100 rounded-xl overflow-hidden">
             <div class="grid md:grid-cols-2">
                 <div class="text-center p-6 xl:p-10 flex flex-col items-center justify-center bg-black">
