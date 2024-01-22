@@ -3,7 +3,7 @@
   include("header.php");
 ?>
 
-
+<!-- slide -->
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden  md:h-[100vh]">
