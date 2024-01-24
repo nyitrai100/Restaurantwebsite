@@ -43,6 +43,44 @@
           </div>
         </div>
       </div>
+
+      <div class="w-full">
+          <div class="mb-5">
+            <label
+              for="email"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@gmail.com"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+        </div>
+
+        <div class="w-full">
+          <div class="mb-5">
+            <label
+              for="tel"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Phone number
+            </label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="07934543567"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+        </div>
+
+
       <div class="mb-5">
         <label
           for="guest"
