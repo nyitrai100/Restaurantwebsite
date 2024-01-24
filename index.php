@@ -5,7 +5,7 @@
 
 <!-- slide -->
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <!-- <div class="absolute top-[50vh] left-[50vw] ">Restaurant name</div> -->
+    <!-- <div class="absolute top-[10vh] sm:top-[50vh] left-[45vw] ">Restaurant name</div> -->
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden  md:h-[100vh]">
          <!-- Item 1 -->
