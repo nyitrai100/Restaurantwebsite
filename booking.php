@@ -8,6 +8,19 @@
   <h1 class="flex justify-center pb-20 text-black text-5xl">Booking Form</h1>
     <form action="https://formbold.com/s/FORM_ID" method="POST">
       <div class="-mx-3 flex flex-wrap">
+
+      <div class="w-full px-3">
+          <div class="mb-5">
+        <label for="branch">Choose the Branch</label>
+            <select id="branch" name="branch" class="w-full">
+              <option value="branch1">branch1</option>
+              <option value="branch2">branch2</option>
+              <option value="branch3">branch3</option>
+              <option value="branch4">branch4</option>
+            </select>
+            </div>
+        </div>
+
         <div class="w-full px-3 sm:w-1/2">
           <div class="mb-5">
             <label
