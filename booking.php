@@ -1,5 +1,4 @@
 <?php 
-//   include("./Database/dbh.php");
   include("header.php");
 ?>
 <div class="p-10 md:p-52 bg-black text-white min-h-[100vh]">

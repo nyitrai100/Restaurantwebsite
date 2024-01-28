@@ -1,5 +1,4 @@
 
-
 <footer class="bg-white shadow dark:bg-gray-900 ">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
@@ -21,7 +20,12 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 TeamName. All Rights Reserved.</span>
-        <a href="loginPage.php" class="ms-2 flex text-white text-sm hover:underline me-4 md:me-6 sm:justify-center">Admin</a>
+        <?php if(isset($_SESSION["user"]))
+                {   echo  "<p class='ms-2 flex text-white text-sm hover:underline me-4 md:me-6 sm:justify-center'>{$_SESSION['user']}</p>" ;
+                    echo '<a href="./Authentication/logout.php" class="ms-2 flex text-white text-sm hover:underline me-4 md:me-6 sm:justify-center">Log out</a>';}
+                else{echo'<a href="loginPage.php" class="ms-2 flex text-white text-sm hover:underline me-4 md:me-6 sm:justify-center">Admin</a>';}
+                ?>
+      <li>
     </div>
 </footer>
 </body>

@@ -1,5 +1,5 @@
 <?php 
-//   include("./Database/dbh.php");
+  include("./database.php");
   include("header.php");
 ?>
 
