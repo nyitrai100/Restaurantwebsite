@@ -87,13 +87,13 @@
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/2491273/pexels-photo-2491273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
         </div>
         <div>
             <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/236887/pexels-photo-236887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/1707270/pexels-photo-1707270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/9541962/pexels-photo-9541962.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
         </div>
     </div>
     <div class="grid gap-4">
@@ -124,7 +124,7 @@
             <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/2491272/pexels-photo-2491272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/323682/pexels-photo-323682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/8694617/pexels-photo-8694617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
         </div>
         <div>
             <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/3997609/pexels-photo-3997609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
