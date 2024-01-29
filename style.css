@@ -1,7 +1,10 @@
 .top-50{
     top:20vh;
 }
-
+/* title */
+.text-shadow{
+text-shadow: 5px 5px black;
+}
 
 /* menuPage mediaQuery */
 
