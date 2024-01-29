@@ -11,7 +11,7 @@
       <div class="w-full px-3">
           <div class="mb-5">
         <label for="branch" class="text-black">Choose the Branch</label>
-            <select id="branch" name="branch" class="w-full">
+            <select id="branch" name="branch" class="w-full text-black">
               <option value="branch1">branch1</option>
               <option value="branch2">branch2</option>
               <option value="branch3">branch3</option>
