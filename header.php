@@ -13,7 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="javascript.js"></script>
-    <title>Restaurant</title>
+    <title>The GrillSmith</title>
 </head>
 <body>  
 
@@ -22,7 +22,7 @@
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="./" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="logo.png" class="h-8" alt="Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">OneBite</span>
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">The GrillSmith</span>
   </a>
   <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
     <a href="./booking.php">
