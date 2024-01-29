@@ -158,10 +158,9 @@
             src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
         </div>
-        <h5 class="mb-4 text-xl font-semibold">Lorem, ipsum.</h5>
+        <h5 class="mb-4 text-xl font-semibold">Michael Anderson</h5>
         <p class="mb-4">
-        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-        suscipit laboriosam, nisi ut aliquid commodi.
+        The GrillSmith exceeded my steak expectations. Impeccable flavors and a cozy atmosphere. A must-visit for steak enthusiasts!
         </p>
         <ul class="mb-0 flex items-center justify-center">
         <li>
@@ -222,10 +221,9 @@
             src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
         </div>
-        <h5 class="mb-4 text-xl font-semibold">Lorem, ipsum.</h5>
+        <h5 class="mb-4 text-xl font-semibold">Richard Thompson</h5>
         <p class="mb-4">
-        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-        suscipit laboriosam, nisi ut aliquid commodi.
+        At The GrillSmith, I indulged in an extraordinary culinary journey. The perfectly grilled steaks left me in awe. Kudos to the chefs! 
         </p>
         <ul class="mb-0 flex items-center justify-center">
         <li>
@@ -286,10 +284,9 @@
             src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
         </div>
-        <h5 class="mb-4 text-xl font-semibold">Lorem, ipsum.</h5>
+        <h5 class="mb-4 text-xl font-semibold">Christopher Roberts</h5>
         <p class="mb-4">
-        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-        suscipit laboriosam, nisi ut aliquid commodi.
+        Exceptional dining at The GrillSmith. The steaks were a symphony of taste, perfectly cooked. A top-notch experience. Cheers!
         </p>
         <ul class="mb-0 flex items-center justify-center">
         <li>
