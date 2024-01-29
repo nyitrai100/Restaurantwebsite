@@ -45,7 +45,7 @@ include("header.php");
         <img class="h-auto max-w-lg rounded-lg pt-10" src="./Pictures/Drink-2.jpg" alt="Drink-2">
     </div>
 
-    <!-- Add the download button with a link to the download.php script -->
+    <!--  button with a link to download the menu -->
     <div class="text-center pt-10">
         <a href="download.php" download="your-file-name.pdf">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
