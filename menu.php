@@ -2,8 +2,17 @@
   include("header.php");
 ?>
 
-<div class="min-h-[100vh]">
+<div class="min-h-[100vh] bg-black p-10">
+  
+<div class="flex justify-around p-10 foodMenuDiv">
+<img class="h-auto max-w-lg rounded-lg pt-10" src="./Pictures/Menu-1.jpg" alt="Menu-1">
+<img class="h-auto max-w-lg rounded-lg pt-10" src="./Pictures/Menu-2.jpg" alt="Menu-2">
+</div>
 
+<div class="flex justify-around p-10 drinkMenuDiv">
+<img class="h-auto max-w-lg rounded-lg pt-10" src="./Pictures/Drink-1.jpg" alt="Drink-">
+<img class="h-auto max-w-lg rounded-lg pt-10" src="./Pictures/Drink-2.jpg" alt="Drink-2">
+</div>
 </div>
 
 <?php 
