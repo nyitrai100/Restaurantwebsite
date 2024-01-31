@@ -1,5 +1,5 @@
 <?php
-$pdfFilePath = './RestaurantMenu.pdf';
+$pdfFilePath = './TheGrillSmith.pdf';
 
 
 if (file_exists($pdfFilePath)) {
