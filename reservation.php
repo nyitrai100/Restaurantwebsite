@@ -168,6 +168,40 @@
 </div> -->
 
 
+
+<!-- Reservation table generated from the database -->
+
+<?php
+        if (!empty($reservations)) {
+            echo "<table class=''>
+                    <thead>
+                        <tr class=''>
+                            <th>Flight Date</th>
+                            <th>Flight Number</th>
+                            <th>Flight Origin</th>
+                            <th>Flight Destination</th>
+                           </tr>
+                    </thead>
+                    <tbody>";
+                    foreach ($reservations as $reservation) {
+                        echo "<tr>
+                                <td class='flightsTableFlight1'>{$reservation['first_name']}</td>
+                                <td class='flightsTableFlight2'>{$reservation['email']}</td>
+                                <td class='flightsTableFlight3'>{$reservation['phone_number']}</td>
+                                <td class='flightsTableFlight4'>{$reservation['reservation_date']}</td>
+                                </tr>";
+                    }
+        
+                    echo "</tbody></table>";
+                } else {
+                    echo "<p>No matching flights found.</p>";
+                }
+         ?>
+
+
+
+
+
 <?php 
 include("footer.php");
 ?>
