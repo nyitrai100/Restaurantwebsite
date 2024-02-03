@@ -1,5 +1,6 @@
 <?php 
   include("header.php");
+  include("./database.php")
 ?>
 <div class="p-10 md:p-52 bg-black text-white min-h-[100vh]">
 <div class="flex items-center justify-center p-12 bg-gray-200 rounded">
@@ -12,10 +13,14 @@
           <div class="mb-5">
         <label for="branch" class="text-black">Choose the Branch</label>
             <select id="branch" name="branch" class="w-full text-black">
-              <option value="branch1">branch1</option>
-              <option value="branch2">branch2</option>
-              <option value="branch3">branch3</option>
-              <option value="branch4">branch4</option>
+              <?php
+                    if (!empty($BranchNames)) {
+
+                        foreach ($BranchNames as $BranchName) {
+                                echo "<option value='{$BranchName['branch_name']}'>'{$BranchName['branch_name']}'</option>";
+                        }
+                    }
+                    ?>
             </select>
             </div>
         </div>

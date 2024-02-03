@@ -24,3 +24,13 @@ $stmt->bindParam(':userID', $userID, PDO::PARAM_INT);
 $stmt->execute();
 $reservationRBS = $stmt->fetchAll();
   $_SESSION['reservationRBS'] = $reservationRBS;
+
+
+
+
+// Branch table for the booking-dropdown-form
+$branchTable = "SELECT * FROM Branch";
+$stmt = $conn->prepare($branchTable);
+$stmt->execute();
+$BranchNames = $stmt->fetchAll();
+$_SESSION['BranchNames'] = $BranchNames;
