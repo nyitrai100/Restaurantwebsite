@@ -44,6 +44,8 @@
 
 <?php
         if (!empty($reservationRBS)) {
+
+
             echo "
             <div class='p-10 md:p-20 bg-black'>
             <div class='overflow-x-auto rounded'>
@@ -51,6 +53,7 @@
              <h1 class='text-white text-2xl pb-10 flex'> Reservation Table</h1>
                     <thead class='bg-gray-800 whitespace-nowrap'>
                         <tr class='even:bg-blue-50'>
+                            <th class='px-6 py-3 text-left text-sm font-semibold text-white'>Branch</th>
                             <th class='px-6 py-3 text-left text-sm font-semibold text-white'>Name</th>
                             <th class='px-6 py-3 text-left text-sm font-semibold text-white'>Email Address</th>
                             <th class='px-6 py-3 text-left text-sm font-semibold text-white'>Phone Number</th>
@@ -63,11 +66,12 @@
                     ";
                     foreach ($reservationRBS as $reservationRB) {
                         echo "<tr class='even:bg-blue-50'>
+                               <td class='px-6 py-4 text-sm'>{$reservationRB['branch_name']}</td>
                                 <td class='px-6 py-4 text-sm'>{$reservationRB['first_name']} {$reservationRB['last_name']}</td>
                                 <td class='px-6 py-4 text-sm'>{$reservationRB['reservation_email']}</td>
                                 <td class='px-6 py-4 text-sm'>{$reservationRB['phone_number']}</td>
-                                <td class='px-6 py-4 text-sm'>{$reservationRB['reservation_date']}</td>
-                                <td class='px-6 py-4 text-sm''> <button> Cancel</button> </td>
+                                <td class='px-6 py-4 text-sm text-center'>{$reservationRB['reservation_date']}</td>
+                                <td class='px-6 py-4 text-sm'> <button class='bg-red-500 rounded p-2 text-white pointer'> Cancel</button> </td>
                                 </tr>";
                     }
         
