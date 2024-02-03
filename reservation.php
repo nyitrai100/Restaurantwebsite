@@ -49,7 +49,7 @@
 
 
 
-<div class="p-10 md:p-20 bg-black">
+<!-- <div class="p-10 md:p-20 bg-black">
 <div class="overflow-x-auto rounded">
   <table class="min-w-full bg-white font-[sans-serif]">
     <h1 class="text-white text-2xl pb-10 flex "> Reservation Table</h1>
@@ -165,7 +165,7 @@
     </tbody>
   </table>
 </div>
-</div>
+</div> -->
 
 
 <?php 
