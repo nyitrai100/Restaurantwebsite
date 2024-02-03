@@ -1,4 +1,5 @@
 <?php
+include("./database.php");
 session_start();
 
 try {
@@ -21,10 +22,12 @@ if (isset($_POST['submit'])) {
     $stmt->bindValue(':email', $email);
     $stmt->execute();
 
+
     if ($row = $stmt->fetch()) {
+        $id = $row['id'];
         if ($password === $row['password']) {
-            // Plain text password comparison
             $_SESSION["user"] = $email;
+            $_SESSION["user_id"] = $id;
             header("Location: ../index.php");
             exit();
         }

@@ -1,6 +1,7 @@
 <?php 
+ include("header.php");
   include("./database.php");
-  include("header.php");
+ 
 ?>
 
 
@@ -26,16 +27,6 @@
         <label for="date" class="text-stone-600 text-sm font-medium">Booked Date</label>
         <input type="date" id="date" class="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
       </div>
-
-      <!-- <div class="flex flex-col">
-        <label for="status" class="text-stone-600 text-sm font-medium">Status</label>
-
-        <select id="status" class="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
-          <option>Dispached Out</option>
-          <option>In Warehouse</option>
-          <option>Being Brought In</option>
-        </select>
-      </div> -->
     </div>
 
     <div class="mt-6 grid w-full grid-cols-2 justify-end space-x-4 md:flex">
@@ -172,7 +163,7 @@
 <!-- Reservation table generated from the database -->
 
 <?php
-        if (!empty($reservations)) {
+        if (!empty($reservationRBS)) {
             echo "<table class=''>
                     <thead>
                         <tr class=''>
@@ -184,12 +175,13 @@
                            </tr>
                     </thead>
                     <tbody>";
-                    foreach ($reservations as $reservation) {
+                    foreach ($reservationRBS as $reservationRB) {
                         echo "<tr>
-                                <td class='flightsTableFlight1'>{$reservation['first_name']} {$reservation['last_name']}</td>
-                                <td class='flightsTableFlight2'>{$reservation['email']}</td>
-                                <td class='flightsTableFlight3'>{$reservation['phone_number']}</td>
-                                <td class='flightsTableFlight4'>{$reservation['reservation_date']}</td>
+                                <td class='flightsTableFlight1'>{$reservationRB['first_name']} {$reservationRB['last_name']}</td>
+                                <td class='flightsTableFlight2'>{$reservationRB['reservation_email']}</td>
+                                <td class='flightsTableFlight3'>{$reservationRB['phone_number']}</td>
+                                <td class='flightsTableFlight4'>{$reservationRB['reservation_date']}</td>
+                                <td class='flightsTableFlight4'>{$reservationRB['branch_id']}</td>
                                 <td> <button> Cancel</button> </td>
                                 </tr>";
                     }
