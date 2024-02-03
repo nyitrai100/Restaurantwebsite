@@ -40,159 +40,42 @@
 
 
 
-<!-- <div class="p-10 md:p-20 bg-black">
-<div class="overflow-x-auto rounded">
-  <table class="min-w-full bg-white font-[sans-serif]">
-    <h1 class="text-white text-2xl pb-10 flex "> Reservation Table</h1>
-    <thead class="bg-gray-800 whitespace-nowrap">
-      <tr>
-        <th class="px-6 py-3 text-left text-sm font-semibold text-white">
-          Name
-        </th>
-        <th class="px-6 py-3 text-left text-sm font-semibold text-white">
-          Email
-        </th>
-        <th class="px-6 py-3 text-left text-sm font-semibold text-white">
-          Phone
-        </th>
-        <th class="px-6 py-3 text-left text-sm font-semibold text-white flex justify-center">
-          Number of guest
-        </th>
-        <th class="px-6 py-3 text-left text-sm font-semibold text-white ">
-          Booking date
-        </th>
-        <th class="px-6 py-3 text-left text-sm font-semibold text-white flex justify-center">
-          Booking time
-        </th>
-      </tr>
-    </thead>
-    <tbody class="whitespace-nowrap">
-      <tr class="even:bg-blue-50">
-        <td class="px-6 py-4 text-sm">
-          John Doe
-        </td>
-        <td class="px-6 py-4 text-sm">
-          john@example.com
-        </td>
-        <td class="px-6 py-4 text-sm">
-          07563546547
-        </td>
-        <td class="px-6 py-4 text-sm flex justify-center">
-          4
-        </td>
-        <td class="px-6 py-4">
-            2024-05-15
-        </td>
-        <td class="px-6 py-4 flex justify-center">
-            15:00
-        </td>
-      </tr>
-
-      <tr class="even:bg-blue-50">
-        <td class="px-6 py-4 text-sm">
-          Jane Smith
-        </td>
-        <td class="px-6 py-4 text-sm">
-          jane@example.com
-        </td>
-        <td class="px-6 py-4 text-sm">
-          07845634586
-        </td>
-        <td class="px-6 py-4 text-sm flex justify-center">
-          6
-        </td>
-        <td class="px-6 py-4">
-             2024-07-20
-        </td>
-        <td class="px-6 py-4 flex justify-center">
-             08:00
-        </td>
-      </tr>
-
-      <tr class="even:bg-blue-50">
-        <td class="px-6 py-4 text-sm">
-          John Doe
-        </td>
-        <td class="px-6 py-4 text-sm">
-          john@example.com
-        </td>
-        <td class="px-6 py-4 text-sm">
-          07563546547
-        </td>
-        <td class="px-6 py-4 text-sm flex justify-center">
-          4
-        </td>
-        <td class="px-6 py-4">
-            2024-05-15
-        </td>
-        <td class="px-6 py-4 flex justify-center">
-            15:00
-        </td>
-      </tr>
-
-      <tr class="even:bg-blue-50">
-        <td class="px-6 py-4 text-sm">
-          Jane Smith
-        </td>
-        <td class="px-6 py-4 text-sm">
-          jane@example.com
-        </td>
-        <td class="px-6 py-4 text-sm">
-          07845634586
-        </td>
-        <td class="px-6 py-4 text-sm flex justify-center">
-          6
-        </td>
-        <td class="px-6 py-4">
-             2024-07-20
-        </td>
-        <td class="px-6 py-4 flex justify-center">
-             08:00
-        </td>
-      </tr>
-      
-
-
-    </tbody>
-  </table>
-</div>
-</div> -->
-
-
-
 <!-- Reservation table generated from the database -->
 
 <?php
         if (!empty($reservationRBS)) {
-            echo "<table class=''>
-                    <thead>
-                        <tr class=''>
-                            <th>Name</th>
-                            <th>Email Address</th>
-                            <th>Phone Number</th>
-                            <th>Reservation Date</th>
-                            <th> Cancel <th>
+            echo "
+            <div class='p-10 md:p-20 bg-black'>
+            <div class='overflow-x-auto rounded'>
+             <table class='min-w-full bg-white font-[sans-serif]'>
+             <h1 class='text-white text-2xl pb-10 flex'> Reservation Table</h1>
+                    <thead class='bg-gray-800 whitespace-nowrap'>
+                        <tr class='even:bg-blue-50'>
+                            <th class='px-6 py-3 text-left text-sm font-semibold text-white'>Name</th>
+                            <th class='px-6 py-3 text-left text-sm font-semibold text-white'>Email Address</th>
+                            <th class='px-6 py-3 text-left text-sm font-semibold text-white'>Phone Number</th>
+                            <th class='px-6 py-3 text-left text-sm font-semibold text-white'>Reservation Date</th>
+                            <th class='px-6 py-3 text-left text-sm font-semibold text-white'> Cancel <th>
                            </tr>
                     </thead>
-                    <tbody>";
+                    <tbody class='whitespace-nowrap'>
+ 
+                    ";
                     foreach ($reservationRBS as $reservationRB) {
-                        echo "<tr>
-                                <td class='flightsTableFlight1'>{$reservationRB['first_name']} {$reservationRB['last_name']}</td>
-                                <td class='flightsTableFlight2'>{$reservationRB['reservation_email']}</td>
-                                <td class='flightsTableFlight3'>{$reservationRB['phone_number']}</td>
-                                <td class='flightsTableFlight4'>{$reservationRB['reservation_date']}</td>
-                                <td class='flightsTableFlight4'>{$reservationRB['branch_id']}</td>
-                                <td> <button> Cancel</button> </td>
+                        echo "<tr class='even:bg-blue-50'>
+                                <td class='px-6 py-4 text-sm'>{$reservationRB['first_name']} {$reservationRB['last_name']}</td>
+                                <td class='px-6 py-4 text-sm'>{$reservationRB['reservation_email']}</td>
+                                <td class='px-6 py-4 text-sm'>{$reservationRB['phone_number']}</td>
+                                <td class='px-6 py-4 text-sm'>{$reservationRB['reservation_date']}</td>
+                                <td class='px-6 py-4 text-sm''> <button> Cancel</button> </td>
                                 </tr>";
                     }
         
-                    echo "</tbody></table>";
+                    echo "</tbody></table>               </div> </div>";
                 } else {
                     echo "<p>No matching flights found.</p>";
                 }
          ?>
-
-
 
 
 
