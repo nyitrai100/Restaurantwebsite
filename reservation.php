@@ -176,19 +176,21 @@
             echo "<table class=''>
                     <thead>
                         <tr class=''>
-                            <th>Flight Date</th>
-                            <th>Flight Number</th>
-                            <th>Flight Origin</th>
-                            <th>Flight Destination</th>
+                            <th>Name</th>
+                            <th>Email Address</th>
+                            <th>Phone Number</th>
+                            <th>Reservation Date</th>
+                            <th> Cancel <th>
                            </tr>
                     </thead>
                     <tbody>";
                     foreach ($reservations as $reservation) {
                         echo "<tr>
-                                <td class='flightsTableFlight1'>{$reservation['first_name']}</td>
+                                <td class='flightsTableFlight1'>{$reservation['first_name']} {$reservation['last_name']}</td>
                                 <td class='flightsTableFlight2'>{$reservation['email']}</td>
                                 <td class='flightsTableFlight3'>{$reservation['phone_number']}</td>
                                 <td class='flightsTableFlight4'>{$reservation['reservation_date']}</td>
+                                <td> <button> Cancel</button> </td>
                                 </tr>";
                     }
         
