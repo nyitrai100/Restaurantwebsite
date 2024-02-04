@@ -1,4 +1,13 @@
 <?php
+
+use Dotenv\Dotenv;
+
+require_once realpath(__DIR__ . '/vendor/autoload.php');
+
+// loading all the env variables to the file
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 include("header.php");
 ?>
 
@@ -13,6 +22,11 @@ include("header.php");
       <!-- Contact Form -->
       <form action="./Contact/send-mail.php" method="POST" class="bg-[#213979] p-6 xl:p-10">
         <div class="max-w-sm mx-auto space-y-4">
+
+        <!-- adding two env values to the form attributes -->
+          <input type="hidden" name="google_mail" value="<?= $_ENV['GOOGLE_MAIL'] ?>" />
+          <input type="hidden" name="google_passkey" value="<?= $_ENV['GOOGLE_PASSKEY'] ?>" />
+
           <input type='text' name="full_name" placeholder='Full Name' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" required />
           <input type='email' name="email" placeholder='Email' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" required />
           <input type='text' name="subject" placeholder='Subject' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" required />

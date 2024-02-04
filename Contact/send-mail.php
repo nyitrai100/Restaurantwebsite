@@ -1,16 +1,15 @@
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
 
 // check if it's from post request
 if (isset($_POST["full_name"])) {
 
     // store incoming data in corresponding variables
-    $receiverMail = "thegrillsmithmail@gmail.com";
+    $receiverMail = $_POST['google_mail'];
     $email = $_POST["email"];
     $full_name = $_POST['full_name'];
     $subject = $_POST['subject'];
-    $message = "Name: " . $name . "\n\nEmail: " . $email . "\n\nMessage: " . $_POST['message'];
+    $message = "Name: " . $full_name . "\n\nEmail: " . $email . "\n\nMessage: " . $_POST['message'];
 
     // import all required library files
     require_once "./PHPMailer/PHPMailer.php";
@@ -27,7 +26,7 @@ if (isset($_POST["full_name"])) {
 
     // ensure that the following credentials are not made public. Later, will be stored in .env file.
     $mail->Username = $receiverMail;
-    $mail->Password = "rdvulnezcujofwao";
+    $mail->Password = $_POST['google_passkey'];
 
     $mail->SMTPSecure = 'ssl';
 
