@@ -77,7 +77,7 @@
         
                     echo "</tbody></table>               </div> </div>";
                 } else {
-                    echo "<p>No matching flights found.</p>";
+                    echo "<p>No matching booking found.</p>";
                 }
          ?>
 
