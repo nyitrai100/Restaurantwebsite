@@ -1,0 +1,17 @@
+.top-50{
+    top:20vh;
+}
+/* title */
+.text-shadow{
+text-shadow: 5px 5px black;
+}
+
+/* menuPage mediaQuery */
+
+@media only screen and (max-width: 1208px) {
+    .foodMenuDiv, .drinkMenuDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
