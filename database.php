@@ -14,7 +14,7 @@ if (isset($_SESSION["user_id"])) {
   $userID = $_SESSION["user_id"];
 }
 // getting all column from multiple table causes field name mismatches when fetching data
-$reservationRestaurantTableBranch = "SELECT r.Id as reId, r.first_name as reFirstName, r.last_name as relastName,
+$reservationRestaurantTableBranch = "SELECT r.Id as reId, r.first_name as reFirstName, r.last_name as reLastName,
                                        b.branch_name as reBranchName, r.phone_number 
                                        as rePhoneNumber, r.reservation_email as reEmail, r.reservation_date 
                                        as reReservationDate FROM Reservation r
