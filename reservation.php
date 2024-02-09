@@ -66,20 +66,26 @@
                     ";
                     foreach ($reservationRBS as $reservationRB) {
                         echo "<tr class='even:bg-blue-50'>
-                               <td class='px-6 py-4 text-sm'>{$reservationRB['branch_name']}</td>
-                                <td class='px-6 py-4 text-sm'>{$reservationRB['first_name']} {$reservationRB['last_name']}</td>
-                                <td class='px-6 py-4 text-sm'>{$reservationRB['reservation_email']}</td>
-                                <td class='px-6 py-4 text-sm'>{$reservationRB['phone_number']}</td>
-                                <td class='px-6 py-4 text-sm text-center'>{$reservationRB['reservation_date']}</td>
-                                <td class='px-6 py-4 text-sm'> <button class='bg-red-500 rounded p-2 text-white pointer'> Cancel</button> </td>
+                               <td class='px-6 py-4 text-sm'>{$reservationRB['reBranchName']}</td>
+                                <td class='px-6 py-4 text-sm'>{$reservationRB['reFirstName']} {$reservationRB['reLastName']}</td>
+                                <td class='px-6 py-4 text-sm'>{$reservationRB['reEmail']}</td>
+                                <td class='px-6 py-4 text-sm'>{$reservationRB['rePhoneNumber']}</td>
+                                <td class='px-6 py-4 text-sm text-center'>{$reservationRB['reReservationDate']}</td>
+                                <td class='px-6 py-4 text-sm'> 
+                                  <form id='cancel_reserve' method='POST' action='./Manage_Booking/cancel_reservation.php'>
+                                    <input type='hidden' name='reserveId' value='{$reservationRB['reId']}' />
+                                    <input type='submit' class='bg-red-500 rounded p-2 text-white cursor-pointer' value='Cancel' />
+                                  </form>
+                                </td>
                                 </tr>";
                     }
         
                     echo "</tbody></table>               </div> </div>";
                 } else {
-                    echo "<p>No matching flights found.</p>";
+                    echo "<h5 class='m-10 text-center font-semibold'>No matching reservation found.</h5>";
                 }
          ?>
+
 
 
 
