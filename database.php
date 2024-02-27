@@ -33,7 +33,7 @@ $_SESSION['reservationRBS'] = $reservationRBS;
 
 
 // Branch table for the booking-dropdown-form
-$branchTable = "SELECT * FROM Branch";
+$branchTable = "SELECT id as branch_id, branch_name, location_id, phone_number, user_id FROM Branch";
 $stmt = $conn->prepare($branchTable);
 $stmt->execute();
 $BranchNames = $stmt->fetchAll();

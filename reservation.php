@@ -21,18 +21,18 @@ function filterReservationBasedOnKeys(array $reserves, array $filters): array
 $reservations = $reservationRBS;
 $fallbackText = "No reservation has been made yet for this branch.";
 
-if ($_SERVER['REQUEST_METHOD'] == 'GET' && ($_GET['reLastName'] || $_GET['reEmail'] || $_GET['reReservationDate'])) {
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && (isset($_GET['reLastName']) || isset($_GET['reEmail']) || isset($_GET['reReservationDate']))) {
   $filters = [];
 
   foreach ($_GET as $key => $value) {
-    if(!empty($value)) {
+    if (!empty($value)) {
       $filters[$key] = $value;
     }
   }
 
   $reservations = filterReservationBasedOnKeys($reservations, $filters);
 
-  if(empty($reservations)) {
+  if (empty($reservations)) {
     $fallbackText = "No matching reservation found. Try filtering with other values.";
   }
 } else {
