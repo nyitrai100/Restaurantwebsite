@@ -1,11 +1,11 @@
 <?php
 
-// use Dotenv\Dotenv;
+use Dotenv\Dotenv;
 
-// require_once realpath(__DIR__ . '/vendor/autoload.php');
+require_once realpath(__DIR__ . '/vendor/autoload.php');
 
-// $dotenv = Dotenv::createImmutable(__DIR__);
-// $dotenv->load();
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 include("header.php");
 ?>
@@ -24,8 +24,8 @@ include("header.php");
 
         <!-- adding two env values to the form attributes -->
 
-          <!-- <input type="hidden" name="google_mail" value="<?= $_ENV['GOOGLE_MAIL'] ?>" />
-          <input type="hidden" name="google_passkey" value="<?= $_ENV['GOOGLE_PASSKEY'] ?>" /> -->
+          <input type="hidden" name="google_mail" value="<?= $_ENV['GOOGLE_MAIL'] ?>" />
+          <input type="hidden" name="google_passkey" value="<?= $_ENV['GOOGLE_PASSKEY'] ?>" />
 
           <input type='text' name="full_name" placeholder='Full Name' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" required />
           <input type='email' name="email" placeholder='Email' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" required />
