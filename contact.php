@@ -9,6 +9,11 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 include("header.php");
+
+$full_name_err = isset($_GET['full_name_err']) ? $_GET['full_name_err'] : '';
+$email_err = isset($_GET['email_err']) ? $_GET['email_err'] : '';
+$subject_err = isset($_GET['subject_err']) ? $_GET['subject_err'] : '';
+$message_err = isset($_GET['message_err']) ? $_GET['full_name_err'] : '';
 ?>
 
 <div class="p-10 md:p-52 bg-black min-h-[100vh]">
@@ -23,14 +28,18 @@ include("header.php");
       <form action="./Contact/send-mail.php" method="POST" class="bg-[#213979] p-6 xl:p-10">
         <div class="max-w-sm mx-auto space-y-4">
 
-        <!-- adding two env values to the form attributes -->
+          <!-- adding two env values to the form attributes -->
           <input type="hidden" name="google_mail" value="<?= $_ENV['GOOGLE_MAIL'] ?>" />
           <input type="hidden" name="google_passkey" value="<?= $_ENV['GOOGLE_PASSKEY'] ?>" />
 
-          <input type='text' name="full_name" placeholder='Full Name' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" required />
-          <input type='email' name="email" placeholder='Email' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" required />
-          <input type='text' name="subject" placeholder='Subject' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" required />
-          <textarea name="message" placeholder='Message' rows="6" class="w-full bg-gray-100 rounded px-4 text-sm pt-3 outline-none" required></textarea>
+          <input type='text' name="full_name" placeholder='Full Name' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" />
+          <p class="text-red-600 text-sm"><?php echo $full_name_err; ?></p>
+          <input type='email' name="email" placeholder='Email' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" />
+          <p class="text-red-600 text-sm"><?php echo $email_err; ?></p>
+          <input type='text' name="subject" placeholder='Subject' class="w-full bg-gray-100 rounded py-3 px-4 text-sm outline-none" />
+          <p class="text-red-600 text-sm"><?php echo $subject_err; ?></p>
+          <textarea name="message" placeholder='Message' rows="6" class="w-full bg-gray-100 rounded px-4 text-sm pt-3 outline-none"></textarea>
+          <p class="text-red-600 text-sm"><?php echo $message_err; ?></p>
           <button type='submit' class="text-white w-full relative bg-blue-500 hover:bg-blue-600 font-semibold rounded text-sm px-6 py-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2 inline" viewBox="0 0 548.244 548.244">
               <path fill-rule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clip-rule="evenodd" data-original="#000000" />
