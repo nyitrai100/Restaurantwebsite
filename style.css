@@ -15,3 +15,7 @@ text-shadow: 5px 5px black;
         align-items: center;
     }
   }
+
+.active {
+    color: dodgerblue !important;
+}
